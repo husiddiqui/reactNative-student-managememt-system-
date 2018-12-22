@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<body>
+<div id = "header" >
+
+</div>
+</br> </br>
+<div id = "btn" align =  "center">
+</br>
+<div id = "heading" > School Management System  </div>
+</br>
+<button id ="btn1" onclick="myFunction()">Student Details</button>
+<button id ="btn2" onclick="myFunction1()">Fee Strcture</button>
+<button id ="btn3" onclick="myFunction2()">Report Card</button>
+<p id="demo"></p>
+</div>
+
+
+<script>
+function myFunction() {
+  let student = prompt("Please enter your Student Id", "");
+  if (student == 1) {
+    document.getElementById("demo").innerHTML =
+    "Student id " + student + "</br>"+ "Student Name:Taha "+ "</br>"+ "Father Name:Usman "+ "</br>"+ "Class: X "+ "</br>" + "Last Class:IX"+ "</br>" + "Last Passing Marks:60% "+ "</br>" + "Roll No:4114 ";
+  }
+  
+  else if (student == 2) {
+    document.getElementById("demo").innerHTML =
+    "Student id " + student + "</br>"+ "Student Name:Zain "+ "</br>"+ "Father Name:Khan "+ "</br>"+ "Class: IX "+ "</br>" + "Last Class:VIII"+ "</br>" + "Last Passing Marks:50% "+ "</br>" + "Roll No:4115 ";
+  }
+  
+   else if (student == 3) {
+    document.getElementById("demo").innerHTML =
+    "Student id " + student + "</br>"+ "Student Name:Hummad "+ "</br>"+ "Father Name:Umer "+ "</br>"+ "Class: IX "+ "</br>" + "Last Class:VIII"+ "</br>" + "Last Passing Marks:90% "+ "</br>" + "Roll No:4115 ";
+  }
+  
+  else
+  {
+  document.getElementById("demo").innerHTML ="wrong ID";
+  }
+ } 
+  
+  
+  
+  
+  
+  function myFunction1() {
+  alert(" Press 1 for Addission Fee \n Press 2 for Monthly fee \n Press 3 for Extracurriculam Fee \n Press 4 for Game Fee"  );
+  
+  let fee = prompt("Please enter your Student Id", "");
+  if (fee == 1) {
+    document.getElementById("demo").innerHTML =
+    "<H3>Fee Strcture </h3>" + "Class I   :  2000 Rs "+ "</br>"+ "Class II: 2500 Rs "+ "</br>"+ "Class III: 3000 Rs "+ "</br>" + "Class IV: 3500 Rs"+ "</br>" + "Class V: 4000 Rs "+ "</br>" + "Class VI: 4500 Rs "+ "</br>" + "Class VII: 5000 Rs " + "</br>" + "Class VIII  : 5500 Rs " + "</br>" + "Class IX: 6000 Rs "+ "</br>" + "Class X: 6500 Rs ";
+  }
+  
+  
+   else if (fee == 2) {
+    document.getElementById("demo").innerHTML =
+    "<H3>Monthly Fee </h3>" + "Class I   :  2000 Rs "+ "</br>"+ "Class II: 2000 Rs "+ "</br>"+ "Class III: 2000 Rs "+ "</br>" + "Class IV: 2000 Rs"+ "</br>" + "Class V: 2000 Rs "+ "</br>" + "Class VI: 2000 Rs "+ "</br>" + "Class VII: 2000 Rs " + "</br>" + "Class VIII  : 2000 Rs " + "</br>" + "Class IX: 2000 Rs "+ "</br>" + "Class X: 2000 Rs ";
+  }
+  
+  
+  else if (fee == 3) {
+    document.getElementById("demo").innerHTML =
+    "<H3>Extra Curriculam Fee  </h3>" +  "Class I   :  200 Rs "+ "</br>"+ "Class II: 250 Rs "+ "</br>"+ "Class III: 300 Rs "+ "</br>" + "Class IV: 350 Rs"+ "</br>" + "Class V: 400 Rs "+ "</br>" + "Class VI: 450 Rs "+ "</br>" + "Class VII: 500 Rs " + "</br>" + "Class VIII  : 550 Rs " + "</br>" + "Class IX: 600 Rs "+ "</br>" + "Class X: 650 Rs ";
+  }
+  
+  else if (fee == 4) {
+    document.getElementById("demo").innerHTML =
+    "<H3>Game Fee Strcture </h3>" + "Class I   :  200 Rs "+ "</br>"+ "Class II: 200 Rs "+ "</br>"+ "Class III: 200 Rs "+ "</br>" + "Class IV: 200 Rs"+ "</br>" + "Class V: 200 Rs "+ "</br>" + "Class VI: 200 Rs "+ "</br>" + "Class VII: 200 Rs " + "</br>" + "Class VIII  : 200 Rs " + "</br>" + "Class IX: 200 Rs "+ "</br>" + "Class X: 200 Rs ";
+  }
+   else 
+  {
+  document.getElementById("demo").innerHTML ="Wrong Option Selected";
+  }
+  
+  
+  }
+  function myFunction2() {
+ 
+  
+  let student = prompt("Please enter your Student Roll Number", "");
+  
+    if (student == 4114) {
+    document.getElementById("demo").innerHTML =
+    "Student id : 1 "  + "</br>"+ "Student Name: Taha "+ "</br>"+ "Father Name:Usman "+ "</br>"+ "Class: X "+ "</br>" + "Roll No:4114 "+  "<h4>Subject</h4>"+ "Physics: Fail "+ "</br>" + "</br>" +" English: Pass" ;
+  }
+  
+  else if (student == 4115) {
+    document.getElementById("demo").innerHTML =
+    "Student id :2 "  +  "</br>"+ "Student Name: Zain "+ "</br>"+ "Father Name:Khan "+ "</br>"+ "Class: IX "+ "</br>" + "Roll No:4115 "+  "<h4>Subject</h4>"+  "Physics: Fail "+ "</br>" + "</br>" +" English: Pass"  ;
+  }
+  
+  else if (student == 4116) {
+    document.getElementById("demo").innerHTML =
+    "Student id : 3 "  + "</br>"+ "Student Name: Hummad "+ "</br>"+ "Father Name:Umer "+ "</br>"+ "Class: IX "+ "</br>" + "Roll No:4116 "+  "<h4>Subject</h4>" + "Physics: Fail "+ "</br>" + "</br>" +" English: Pass" ;
+  }
+
+  else 
+  {
+  document.getElementById("demo").innerHTML ="Wrong Roll Number";
+  }
+  
+  
+  
+  
+  }
+  
+
+</script>
+
+</body>
+</html>
+
+<style>
+#header 
+{
+height: 300px;
+background-color:black;
+background-image:url("sch.jpg");
+ border: 3px solid bold green;
+}
+body
+{
+background-color:gray;
+}
+
+#btn
+{
+  margin: auto;
+  width: 53%;
+  
+  padding: 10px;
+  height :600px;
+  background-image:url("brd.png");
+  background-repeat: no-repeat
+}
+
+#heading
+{
+font-family: "Times New Roman", Times, serif;
+font-size:30px;
+color:black;
+}
+
+
+#btn1{
+ background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+#btn2{
+ background-color: #008CBA; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+#btn3{
+ background-color: #f44336; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+</style>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>School Management System</p>
+
+<button onclick="myFunction()">Student Detail</button>
+<button onclick="myFunction1()">Fee Strcture</button>
+<button onclick="myFunction2()">Report Card</button>
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  let student = prompt("Please enter your Student Id", "");
+  if (student == 1) {
+    document.getElementById("demo").innerHTML =
+    "Student id " + student + "</br>"+ "Student Name:Taha "+ "</br>"+ "Father Name:Usman "+ "</br>"+ "Class: X "+ "</br>" + "Last Class:IX"+ "</br>" + "Last Passing Marks:60% "+ "</br>" + "Roll No:4114 ";
+  }
+  
+  if (student == 2) {
+    document.getElementById("demo").innerHTML =
+    "Student id " + student + "</br>"+ "Student Name:Zain "+ "</br>"+ "Father Name:Khan "+ "</br>"+ "Class: IX "+ "</br>" + "Last Class:VIII"+ "</br>" + "Last Passing Marks:50% "+ "</br>" + "Roll No:4115 ";
+  }
+  
+   if (student == 3) {
+    document.getElementById("demo").innerHTML =
+    "Student id " + student + "</br>"+ "Student Name:Hummad "+ "</br>"+ "Father Name:Umer "+ "</br>"+ "Class: IX "+ "</br>" + "Last Class:VIII"+ "</br>" + "Last Passing Marks:90% "+ "</br>" + "Roll No:4115 ";
+  }
+ } 
+  
+  
+  
+  
+  
+  function myFunction1() {
+  alert(" Press 1 for Addission Fee \n Press 2 for Monthly fee \n Press 3 for Extracurriculam Fee \n Press 4 for Game Fee"  );
+  
+  let fee = prompt("Please enter your Student Id", "");
+  if (fee == 1) {
+    document.getElementById("demo").innerHTML =
+    "<H1>Fee Strcture </h1>" + "</br>"+ "Class I   :  2000 Rs "+ "</br>"+ "Class II: 2500 Rs "+ "</br>"+ "Class III: 3000 Rs "+ "</br>" + "Class IV: 3500 Rs"+ "</br>" + "Class V: 4000 Rs "+ "</br>" + "Class VI: 4500 Rs "+ "</br>" + "Class VII: 5000 Rs " + "</br>" + "Class VIII  : 5500 Rs " + "</br>" + "Class IX: 6000 Rs "+ "</br>" + "Class X: 6500 Rs ";
+  }
+  
+  
+   if (fee == 2) {
+    document.getElementById("demo").innerHTML =
+    "<H1>Monthly Fee </h1>" + "</br>"+ "Class I   :  2000 Rs "+ "</br>"+ "Class II: 2000 Rs "+ "</br>"+ "Class III: 2000 Rs "+ "</br>" + "Class IV: 2000 Rs"+ "</br>" + "Class V: 2000 Rs "+ "</br>" + "Class VI: 2000 Rs "+ "</br>" + "Class VII: 2000 Rs " + "</br>" + "Class VIII  : 2000 Rs " + "</br>" + "Class IX: 2000 Rs "+ "</br>" + "Class X: 2000 Rs ";
+  }
+  
+  
+  if (fee == 3) {
+    document.getElementById("demo").innerHTML =
+    "<H1>Extra Curriculam Fee  </h1>" + "</br>"+ "Class I   :  200 Rs "+ "</br>"+ "Class II: 250 Rs "+ "</br>"+ "Class III: 300 Rs "+ "</br>" + "Class IV: 350 Rs"+ "</br>" + "Class V: 400 Rs "+ "</br>" + "Class VI: 450 Rs "+ "</br>" + "Class VII: 500 Rs " + "</br>" + "Class VIII  : 550 Rs " + "</br>" + "Class IX: 600 Rs "+ "</br>" + "Class X: 650 Rs ";
+  }
+  
+  if (fee == 4) {
+    document.getElementById("demo").innerHTML =
+    "<H1>Game Fee Strcture </h1>" + "</br>"+ "Class I   :  200 Rs "+ "</br>"+ "Class II: 200 Rs "+ "</br>"+ "Class III: 200 Rs "+ "</br>" + "Class IV: 200 Rs"+ "</br>" + "Class V: 200 Rs "+ "</br>" + "Class VI: 200 Rs "+ "</br>" + "Class VII: 200 Rs " + "</br>" + "Class VIII  : 200 Rs " + "</br>" + "Class IX: 200 Rs "+ "</br>" + "Class X: 200 Rs ";
+  }}
+  function myFunction2() {
+  alert(" Press 1 for Addission Fee \n Press 2 for Monthly fee \n Press 3 for Extracurriculam Fee \n Press 4 for Game Fee"  );
+  
+  let student = prompt("Please enter your Student Id", "");
+  
+    if (student == 4114) {
+    document.getElementById("demo").innerHTML =
+    "Student id : 1 "  + "</br>"+ "Student Name:Taha "+ "</br>"+ "Father Name:Usman "+ "</br>"+ "Class: X "+ "</br>" + "Roll No:4114 "+ "</br>" + "<h4>Subject</h4>"+ "</br>" + "Physics: Fail "+ "</br>" + "</br>" +" English: Pass" ;
+  }
+  
+  if (student == 4115) {
+    document.getElementById("demo").innerHTML =
+    "Student id :2 "  +  "</br>"+ "Student Name:Zain "+ "</br>"+ "Father Name:Khan "+ "</br>"+ "Class: IX "+ "</br>" + "Roll No:4115 "+ "</br>" + "<h4>Subject</h4>"+ "</br>" + "Physics: Fail "+ "</br>" + "</br>" +" English: Pass"  ;
+  }
+  
+   if (student == 4116) {
+    document.getElementById("demo").innerHTML =
+    "Student id : 3 "  + "</br>"+ "Student Name:Hummad "+ "</br>"+ "Father Name:Umer "+ "</br>"+ "Class: IX "+ "</br>" + "Roll No:4116 "+ "</br>" + "<h4>Subject</h4>"+ "</br>" + "Physics: Fail "+ "</br>" + "</br>" +" English: Pass" ;
+  }
+  
+  
+  
+  
+  
+  }
+  
+
+</script>
+
+</body>
+</html>
